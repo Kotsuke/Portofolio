@@ -1,34 +1,21 @@
 <x-layout>
-        <div class="container text-center mt-5">
-        <h1>Selamat Datang di Portofolio Saya</h1>
-        <p class="lead">Saya seorang Web Developer yang fokus pada Laravel.</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <a href=""><img src="{{ asset('image/prf.jpg') }}"
+                        class="rounded-circle mt-3 col-md-6 float-md-end mb-3 ms-md-3" width="200" alt="" srcset=""></a>
+            </div>
+            <div class="col-7 p-5">
+                <h5>Subandrio</h5>
+                <article>Perkenalkan Nama saya Subandrio biasa dipanggil RIO. Saya Adalah seorang Mahasiswa Semester 4 dan saat ini sedang Tertarik dengan pengembangan Website berbasis Laravel, Membuat Website sangat menyenangkan dan membuatku terus belajar membuat website yang keren dan optimal. aku berharap dengan langkah awal ini aku dapat melengkapi skill untuk membuat website yang lebih menarik lagi.
+                </article>
+            </div>
+            <hr>
+            <div >
+                
+            </div>
 
-        <img src="{{ asset('images/profile.jpg') }}" class="rounded-circle mt-3" width="200" alt="Foto Profil">
-
-        <div class="mt-4">
-            <a href="{{ route('projects') }}" class="btn btn-primary">Lihat Proyek</a>
-            <a href="{{ route('contact') }}" class="btn btn-outline-secondary">Hubungi Saya</a>
         </div>
     </div>
-    <div class="container mt-5">
-    <h2 class="text-center">Keahlian Saya</h2>
-    <div class="row mt-4">
-        <div class="col-md-4 text-center">
-            <i class="bi bi-code-slash display-4"></i>
-            <h4>Web Development</h4>
-            <p>Membuat website modern dan responsif dengan Laravel & Vue.js.</p>
-        </div>
-        <div class="col-md-4 text-center">
-            <i class="bi bi-database display-4"></i>
-            <h4>Database Management</h4>
-            <p>Merancang database yang efisien menggunakan MySQL & PostgreSQL.</p>
-        </div>
-        <div class="col-md-4 text-center">
-            <i class="bi bi-brush display-4"></i>
-            <h4>UI/UX Design</h4>
-            <p>Merancang antarmuka yang menarik dan mudah digunakan.</p>
-        </div>
-    </div>
-</div>
 
 </x-layout>
