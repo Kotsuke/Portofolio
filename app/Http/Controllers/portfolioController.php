@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Project;
 
 class PortfolioController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $projects = Project::latest()->limit(3)->get(); // Ambil 3 proyek terbaru
+        return view('home', compact('projects')); // Kirim data ke view
     }
 
     public function about()
